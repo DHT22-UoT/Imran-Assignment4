@@ -43,6 +43,7 @@ country_delay
 class(ufo$duration..seconds.)
 summary(ufo$duration..seconds.)
 
+# The range of the data is extremely large, with unrealistic sighting times (ie 0.02) that can mathematically be considered as outliers
 # Removal of sightings that were less than 0.5 second or longer than 30 days to remove non-feasible sightings
 ufo <- ufo %>%
   filter(duration..seconds. >= 0.5) %>%
